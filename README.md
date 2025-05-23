@@ -1,11 +1,10 @@
 # card-validator
 
-A C++ program to validate card numbers for correct format and validity. This utility checks if a card number is valid using the Luhn algorithm and can identify card types (such as Visa and MasterCard) based on their number prefixes.
+A C++ program to validate card numbers for correct format and validity. This utility checks if a card number is valid using the Luhn algorithm.
 
 ## Features
 
 - Validates card numbers using the Luhn algorithm
-- Detects card type (Visa, MasterCard, etc.) based on number prefix
 - Simple command-line interface for user interaction
 - Cross-platform: works on Linux, Windows, and macOS
 
@@ -60,34 +59,7 @@ Pass the card number as a command-line argument.
 card_validator.exe 4111111111111111
 ```
 
-**Example Output:**
-```
-Card number: 4111111111111111
-Card type: Visa
-Valid: Yes
-```
-
 ## How it Works
 
 1. **Format Validation:** Checks the length and ensures all characters are numeric.
 2. **Luhn Algorithm:** Applies the Luhn algorithm to verify the validity of the card number.
-
-## Example
-
-```sh
-./card_validator 5500000000000004
-```
-Output:
-```
-Card number: 5500000000000004
-Card type: MasterCard
-Valid: Yes
-```
-
-## Contributing
-
-Pull requests are welcome! For major changes, please open an issue first to discuss your ideas.
-
-## License
-
-This project is licensed under the MIT License.
